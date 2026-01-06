@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar Tailwind</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- CONTAINER UTAMA -->
+  <div class="max-w-4xl mx-auto p-4">
+
+    <!-- JUDUL -->
+    <h1 class="text-4xl font-bold text-center text-blue-600 mb-4">
+      HELLO WORLD
+    </h1>
+
+    <!-- LINK -->
+    <div class="text-center mb-6">
+      <a href="#input" class="text-blue-500 hover:underline hover:text-red-600">
+        Langsung ke Form
+      </a>
+    </div>
+
+    <!-- PARAGRAF + FOTO -->
+    <div class="bg-white p-4 rounded-lg shadow mb-6">
+    <div class="flex items-center gap-4">
+
+        <!-- TEKS (KIRI) -->
+        <div class="w-2/3">
+        <p class="mb-2 font-medium text-lg">
+            Ini adalah paragraf
+        </p>
+        <p class="text-gray-600 leading-relaxed">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quam aliquam ducimus sequi molestias amet consequuntur quos,
+            illo odit explicabo. Fuga eligendi voluptas modi ipsam maiores
+            pariatur placeat ab voluptatibus animi.
+        </p>
+        
+        </div>
+
+        <!-- FOTO (KANAN) -->
+        <div class="w-1/3">
+        <img src="tes.jpeg" alt="Foto"
+            class="w-full rounded-lg shadow object-cover">
+        </div>
+
+    </div>
+    </div>
+
+    <!-- TABEL -->
+    <h3 class="text-2xl font-semibold mb-2">Masuk Bagian Tabel</h3>
+    <div class="overflow-x-auto mb-6">
+      <table class="w-full border border-gray-300 bg-white rounded-lg overflow-hidden">
+        <thead class="bg-blue-600 text-white">
+          <tr>
+            <th class="p-2 text-left">Nama</th>
+            <th class="p-2 text-left">Kelas</th>
+            <th class="p-2 text-left">Umur</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-t hover:bg-gray-100">
+            <td class="p-2">Faruq</td>
+            <td class="p-2">12</td>
+            <td class="p-2">21</td>
+          </tr>
+          <tr class="border-t hover:bg-gray-100">
+            <td class="p-2">Faruq</td>
+            <td class="p-2">12</td>
+            <td class="p-2">21</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- GAMBAR -->
+    <h3 class="text-2xl font-semibold mb-2">Masuk Bagian Gambar</h3>
+    <img src="tes.jpeg" alt="Gambar"
+      class="w-32 rounded-lg shadow mb-6">
+
+    <!-- FORM -->
+    <h3 id="input" class="text-2xl font-semibold mb-4">
+      Ini Bagian Form
+    </h3>
+
+    <form class="bg-white p-4 rounded-lg shadow space-y-4">
+      <div>
+        <label class="block font-medium mb-1">Nama</label>
+        <input type="text"
+          class="w-full border rounded px-3 py-2 focus:outline-none focus:ring focus:ring-blue-300">
+      </div>
+
+      <div>
+        <label class="block font-medium mb-1">Umur</label>
+        <input type="number" min="0" max="120"
+          class="w-full border rounded px-3 py-2 focus:outline-none focus:ring focus:ring-blue-300">
+      </div>
+
+      <div>
+        <label class="block font-medium mb-1">Deskripsi</label>
+        <textarea rows="5" placeholder="Masukan deskripsi"
+          class="w-full border rounded px-3 py-2 focus:outline-none focus:ring focus:ring-blue-300"></textarea>
+      </div>
+      <div class="flex justify-center">
+        <button type="submit"
+        class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+        Kirim
+      </button>
+      </div>
+    </form>
+
+    <!-- FOOTER -->
+    <footer class="text-center text-gray-500 mt-8">
+      <hr class="mb-2">
+      <p>Muhammad Al-Faruq © 2026</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
