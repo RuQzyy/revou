@@ -15,7 +15,7 @@ form.addEventListener("submit", function (e) {
 
   // VALIDATION
   if (task === "" || date === "") {
-    alert("Please fill in task and date!");
+    alert("Pastikan Semua Data Diisi");
     return;
   }
 
